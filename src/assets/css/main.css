@@ -1611,6 +1611,10 @@ input:focus, input:focus-visible {
     background-color: #FFFFFF70;
 }
 
+.gradient-bg-one {
+    background: linear-gradient(102.21deg, #EBFFFC 8.72%, #F2FFF4 100%);
+}
+
 .border-main-50 {
     border-color: var(--main-50) !important;
 }
@@ -7983,6 +7987,7 @@ input:focus, input:focus-visible {
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffe6;
 }
 
 @media screen and (max-width: 991px) {
