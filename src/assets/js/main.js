@@ -763,13 +763,6 @@
 
 
 
-
-
-
-
-
-
-
     // ========================== Settings Panel Js Start =====================
     $(".settings-button").on("click", function () {
       $(".settings-panel").toggleClass("active");
@@ -958,13 +951,31 @@
     // ======================== counter up js end ======================
     
 
+    // ========================= Category Js Start ===================
+    let categoryButton = document.querySelector(".category-button");
+    let categoryDropdown = document.querySelector(".category-dropdown");
 
-    // ========================== Add Attribute For Bg Image Js Start ====================
-    // $(".background-img").css('background', function () {
-    //   var bg = ('url(' + $(this).data("background-image") + ')');
-    //   return bg;
-    // });
-    // ========================== Add Attribute For Bg Image Js End =====================
+    if (categoryButton && categoryDropdown) {
+      categoryButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        this.classList.toggle("active");
+        categoryDropdown.classList.toggle("active");
+      });
+
+      categoryDropdown.addEventListener("click", function (event) {
+        event.stopPropagation();
+        categoryButton.classList.add("active");
+        categoryDropdown.classList.add("active");
+      });
+
+      document.querySelector("body").addEventListener("click", function () {
+        categoryButton.classList.remove("active");
+        categoryDropdown.classList.remove("active");
+      });
+    }
+    // ========================= Category Js End ===================
+    
+
   });
   // ==========================================
   //      End Document Ready function
