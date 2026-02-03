@@ -1594,6 +1594,18 @@ input:focus, input:focus-visible {
     background-color: hsl(var(--white)/0.06);
 }
 
+.bg-white-22 {
+    background-color: #FFFFFF38;
+}
+
+.bg-black-22 {
+    background: #111A2438;
+}
+
+.bg-black-12 {
+    background: #00000012;
+}
+
 /* hover bg class end */
 .tw-mb-main-10 {
     background-color: #E8F8F5;
@@ -1613,6 +1625,22 @@ input:focus, input:focus-visible {
 
 .gradient-bg-one {
     background: linear-gradient(102.21deg, #EBFFFC 8.72%, #F2FFF4 100%);
+}
+
+.text-purple-600 {
+    color: #6D13D7;
+}
+
+.text-red-600 {
+    color: #F5265D;
+}
+
+.text-cyan-600 {
+    color: #00C8FF;
+}
+
+.text-yellow-600 {
+    color: #FEA441;
 }
 
 .border-main-50 {
