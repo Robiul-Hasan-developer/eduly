@@ -1643,6 +1643,10 @@ input:focus, input:focus-visible {
     color: #FEA441;
 }
 
+.bg-black-blue {
+    background-color: #110C2D;
+}
+
 .border-main-50 {
     border-color: var(--main-50) !important;
 }
