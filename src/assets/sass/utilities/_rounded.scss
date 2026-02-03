@@ -1,0 +1,56 @@
+/* Border Radius Css Start */
+.tw-rounded {
+   border-radius: 0.25rem; /* 4px */
+   &-none {
+      border-radius: 0px;
+   }
+   &-sm {
+      border-radius: 0.125rem; /* 2px */
+   }
+   &-md {
+      border-radius: 0.375rem; /* 6px */
+   }
+   &-lg {
+      border-radius: 0.5rem; /* 8px */
+   }
+   &-xl {
+      border-radius: 0.75rem; /* 12px */
+   }
+   &-2xl {
+      border-radius: 1rem; /* 16px */
+   }
+   &-3xl {
+      border-radius: 1.5rem; /* 24px */
+   }
+}
+/* Border Radius Css End */
+.tw-rounded-26-px {
+   border-radius: 0 26px 0 26px !important;
+}
+.tw-rounded-21-px {
+   border-radius: 0 21px 0 21px !important;
+}
+.tw-rounded-bottom-12px {
+   border-radius: 0 0 12px 12px;
+}
+.tw-rounded-top-8px {
+   border-radius: 8px 8px 0 0;
+}
+.tw-rounded-top-12px {
+   border-radius: 12px 12px 0 0;
+}
+.tw-rounded-right-left-60px {
+   border-radius: 60px 0 60px 0;
+}
+.tw-rounded-top-right-left {
+   border-radius: 0 50px 0 50px;
+}
+.tw-clicp-pate-one {
+   clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.tw-rounded-left-right-50-px {
+   border-radius: 50px 0 50px 0;
+}
+.tw-rounded-top-bottom-12-px {
+   border-radius: 12px 0 12px 0;
+}

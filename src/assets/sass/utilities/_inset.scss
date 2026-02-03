@@ -1,0 +1,48 @@
+/* Inset class start */
+.tw-start {
+    &-0 {
+        inset-inline-start: 0;
+    }
+    &-30-px {
+        inset-inline-start: 30px;
+    }
+    &--94-px {
+        inset-inline-start: -94px;
+    }
+    &-38-px {
+        inset-inline-start: 38px;
+    }
+    &-50 {
+        inset-inline-start: 50%;
+    }
+    &-100 {
+        inset-inline-start: 100%;
+    }
+    &-auto {
+        inset-inline-start: auto;
+    }
+}
+.tw-end {
+    &-0 {
+        inset-inline-end: 0;
+    }
+    &--6px {
+        inset-inline-end: -6px;
+    }
+    &-84-px {
+        inset-inline-end: 84px;
+    }
+    &-30 {
+        inset-inline-end: 30%;
+    }
+    &-50 {
+        inset-inline-end: 50%;
+    }
+    &-100 {
+        inset-inline-end: 100%;
+    }
+    &-auto {
+        inset-inline-end: auto;
+    }
+}
+/* Inset class End */

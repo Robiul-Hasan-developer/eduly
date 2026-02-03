@@ -1,0 +1,51 @@
+<!-- ===================== popular categories section start ========================= -->
+<section class="bg-neutral-50 py-100 position-relative z-2 overflow-hidden">
+    <img src="assets/images/shape/popular-catagories-two-shape1.png" alt="shape" class="position-absolute bottom-0 tw-start-0 tw-mb-176-px tw-ms-100-px animation-scalation d-xl-block d-none z-n1">
+    <img src="assets/images/shape/services-shape-one.png" alt="shape" class="position-absolute top-0 tw-end-0 tw-mt-10 tw-me--270-px animation-upDown d-xl-block d-none z-n1">
+    <div class="container">
+        <div class="d-flex align-items-end tw-gap-4 justify-content-between flex-wrap tw-mb-10">
+            <div>
+                <div class="tw-py-1 tw-ps-105 tw-pe-4 bg-main-50 rounded-pill d-inline-flex align-items-center tw-gap-3 tw-mb-7" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <span class="tw-w-6 tw-h-6 border-main-100 border bg-white rounded-circle text-main-600 d-flex align-items-center justify-content-center tw-text-305">
+                        <i class="ph-fill ph-star-four"></i>
+                    </span>
+                    <span class="fw-normal tw-text-4 text-main-600">
+                       Popular Categories
+                    </span>
+                </div>
+                <h3 class="fw-semibold text-neutral-950" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    Our Most Popular Courses
+                </h3>
+            </div>
+            <ul class="nav nav-tabs d-flex border-bottom-0 flex-wrap tw-gap-205" id="myTab" role="tablist" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill active" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses-tab-pane" type="button" role="tab" aria-controls="courses-tab-pane" aria-selected="true">All Courses</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" id="business-tab" data-bs-toggle="tab" data-bs-target="#business-tab-pane" type="button" role="tab" aria-controls="business-tab-pane" aria-selected="false">Business</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">Marketing</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link rounded-pill" id="development-tab" data-bs-toggle="tab" data-bs-target="#development-tab-pane" type="button" role="tab" aria-controls="development-tab-pane" aria-selected="false">Development</button>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content tw-mt-13" id="myTabContent">
+            <div class="tab-pane fade show active" id="courses-tab-pane" role="tabpanel" aria-labelledby="courses-tab" tabindex="0">
+                @@include('../partials/_popular-course-two-tab.html')
+            </div>
+            <div class="tab-pane fade" id="business-tab-pane" role="tabpanel" aria-labelledby="business-tab" tabindex="0">
+                @@include('../partials/_popular-course-two-tab.html')
+            </div>
+            <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
+                @@include('../partials/_popular-course-two-tab.html')
+            </div>
+            <div class="tab-pane fade" id="development-tab-pane" role="tabpanel" aria-labelledby="development-tab" tabindex="0">
+                @@include('../partials/_popular-course-two-tab.html')
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===================== popular categories section end ========================= --> 

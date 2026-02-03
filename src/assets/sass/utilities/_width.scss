@@ -1,0 +1,100 @@
+/* width Css Class start */
+@each $property, $value in $spaces {
+  .tw-w-#{$property} {
+    width: $value;
+  }
+}
+
+.min-w-max {
+  min-width: max-content;
+}
+
+.tw-w {
+  &-px {
+    width: 1px;
+  }
+  &-22-px {
+    width: 22px;
+  }
+  &-57-px {
+    width: 57px;
+  }
+  &-80-px {
+    width: 80px;
+  }
+  &-84-px {
+    width: 84px;
+  }
+  &-88-px {
+    width: 88px;
+  }
+  &-92-px {
+    width: 92px;
+  }
+  &-104-px {
+    width: 104px;
+  }
+  &-110-px {
+    width: 110px;
+  }
+  &-120-px {
+    width: 120px;
+  }
+  &-156-px {
+    width: 156px;
+  }
+  &-158-px {
+    width: 168px;
+  }
+  &-176-px {
+    width: 176px;
+  }
+  &-180-px {
+    width: 180px;
+  }
+  &-200-px {
+    width: 200px;
+  }
+  &-300-px {
+    width: 300px;
+  }
+  &-360-px {
+    width: 360px;
+  }
+  &-386-px {
+    width: 386px;
+  }
+  &-430-px {
+    width: 430px !important;
+  }
+   &-600-px {
+    width: 600px !important;
+  }
+  &-980-px {
+    width: 980px;
+  }
+  &-w-max {
+    width: max-content;
+  }
+  &-100-vw {
+    width: 100vw !important;
+  }
+
+}
+
+.tw-w-100-persent-media {
+  @media (max-width: 9992px) {
+    width: 100%;
+  }
+}
+/* width Css Class End */
+
+.tw-w-209-px {
+  max-width: 209px;
+  @media (max-width: 1399px) {
+    max-width: 350px;
+  }
+  @media (max-width: 574px) {
+    max-width: 100%;
+  }
+}

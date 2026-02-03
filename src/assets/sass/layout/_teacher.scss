@@ -1,0 +1,11 @@
+// ========================= teacher css start ===========================
+.teacher__link {
+    display: none;
+    transition: .5s;
+}
+.teacher-card:hover {
+    .teacher__link {
+        display: block;
+    }
+}
+// ========================= teacher css end ===========================

@@ -1,0 +1,95 @@
+// ============================= course filter css start ============================   
+.course-nave-menu {
+    &.active {
+        .course-nave-menu__item {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+// ============================= course filter css end ============================
+
+
+
+// ================================ course details css start ==============================
+.nav-tabs .nav-link.active {
+    color: #613DE4;
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid #613DE4;
+}
+.nav-link:focus, .nav-link:hover {
+    color: none;
+}
+.nav-tabs .nav-link {
+    margin-bottom: 0;
+    border: 0;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+}
+.course-details-card {
+    @media (max-width:992px) {
+        margin-top: 0;
+    }
+}
+
+
+// ================================ course details css end ==============================
+.our-event-link::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #3057EF 0%, #B665E7 100%);
+    z-index: -2;
+}
+
+.our-event-link::after {
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 94%;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    z-index: -1;
+}
+// ============================== our event css end ================================
+
+
+// ============================= event details css start =============================
+.event-details-card {
+    @media (max-width: 992px) {
+        margin-top: 0;
+    }
+}
+.course-crose-button {
+    transition: .5s;
+}
+.course-toggle-item {
+    @media (max-width: 1199px) {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: #fff;
+        transition: .5s;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    &.active{
+        visibility: visible !important;
+        opacity: 1;
+    }
+}
+// ============================= event detalis css end =============================

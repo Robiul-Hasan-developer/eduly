@@ -1,0 +1,52 @@
+.testimonial-shape__one {
+    @media (max-width: 1399px) {
+        margin-top: -53px;
+        inset-inline-start: -42px;
+    }
+}
+.testimonial-img {
+    @media (max-width: 992px) {
+        margin-top: -170px;
+    }
+    @media (max-width: 768px) {
+        margin-top: -124px;
+    }
+}
+.testimonial-title {
+    @media (max-width: 410px) {
+        max-width: 282px;
+    }
+}
+
+
+// ================== testimonial two css start ========================
+.testimonial-two-img {
+    @media (max-width: 1199px) {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.testimonial-two-shape-one {
+    @media (max-width: 1299px) {
+        margin-left: -50px !important;
+    }
+    @media (max-width: 1199px) {
+        margin-left: 160px !important;
+    }
+    @media (max-width: 992px) {
+        margin-left: 40px !important;
+    }
+    @media (max-width: 768px) {
+        margin-left: -50px !important;
+    }
+    @media (max-width: 599px) {
+        margin-left: 20px !important;
+    }
+    @media (max-width: 345px) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+// ================== testimonial two css end =========================

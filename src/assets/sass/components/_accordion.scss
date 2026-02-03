@@ -1,0 +1,149 @@
+/* =========================== Accordion Css start ============================= */ 
+.common-accordion {
+    .accordion-item {
+        &:not(:last-child) {
+            margin-block-end:20px;
+        }
+    }
+    &:first-of-type .accordion-button.collapsed {
+        border-radius: 5px;  
+    }
+    &:last-of-type .accordion-button.collapsed {
+        border-radius: 5px;  
+    }
+    .accordion-button { 
+        &::after {
+            background-image: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:not(.collapsed) {
+            background-color: transparent !important;
+            box-shadow: none;
+            color: var(--main-600);
+            &::after {
+                background-image: none;
+                color: var(--main-600);
+            }
+        }
+        &[aria-expanded="true"], &[aria-expanded="false"] {
+            &::after {
+                font-family: "Phosphor";
+                font-weight: 900;
+                content: "\f106";
+                color: var(--main-600);
+                display: inline-block;
+                position: absolute;
+                inset-block-start: 50%;
+                transform: translateY(-50%);
+                inset-inline-end: 30px;
+                height: unset;
+                text-align: center;
+                @include msm-screen {
+                    inset-inline-end: 20px;
+                }
+            }
+        }
+        &[aria-expanded="false"] {
+            &::after {
+                content: "\f107";
+                color: hsl(var(--heading-color));
+            }
+        }
+    }
+}
+/* ================================= Accordion Css End =========================== */
+
+.accordion-item {
+    border: 1px solid #EFEFEF !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    background-color: #1CB098 !important;
+    color: #fff !important;
+}
+.accordion-item {
+    background-color: #1CB098 !important;
+    color: #fff !important;
+}
+
+
+
+.accordion-button-two:not(.collapsed) {
+    box-shadow: none;
+    background-color: #1F1F1F;
+    color: #fff;
+    border-radius: 12px 12px 0 0 !important;
+}
+.accordion-button-two::after {
+    content: "\e3d4";
+    width: 40px;
+    height: 40px;
+    background-color: #F3F7F6;
+    font-size: 20px;
+    color: #206D69;
+    font-family: "phosphor";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: none;
+}
+.accordion-button-two:not(.collapsed)::after {
+    content: "\e32a";
+    background-color: #FFCD1F;
+    color: #1F1F1F;
+    background-image: none;
+    flex-shrink: 0;
+}
+.accordion-button-two {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    border: 1px solid #D9D9D9;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+
+
+// ========================= accordion three css start =============================
+.accordion-button-three::after {
+    content: "\E3D4";
+    font-size: 18px;
+    color: #454E59;
+    font-family: "phosphor";
+    background-image: none;
+}
+.accordion-button-three:not(.collapsed)::after {
+    content: "\E32A";
+    background-image: none;
+}
+.accordion-button-three:not(.collapsed) {
+    box-shadow: none;
+    color: #454E59;
+}
+.accordion-button-three::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    content: "\e3d4";
+    font-size: 18px;
+    color: #454E59;
+    font-family: "phosphor";
+    background-image: none;
+}
+// ========================= accordion three css end =============================

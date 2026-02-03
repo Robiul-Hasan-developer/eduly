@@ -1,0 +1,14 @@
+// ========================= musk css start =============================
+.tw-banner-two-musk-img1 {
+    -webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: cover;
+	-webkit-mask-image: url("../images/bg/banner-two-bg-img1.png");
+	mask-repeat: no-repeat;
+	background-color: #E8F8F5;
+	mask-size: cover;
+	@media (max-width: 1199px) {
+		mask-image: none;
+	}
+}
+
+// ========================= musk css end =============================

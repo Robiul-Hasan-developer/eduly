@@ -1,0 +1,51 @@
+.online-coures-link::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #2B2B2B;
+    top: 3px;
+    z-index: -1;
+    transition: .3s;
+}
+.online-coures-link:hover {
+    &::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #2B2B2B;
+    top: -3px;
+    z-index: -1;
+}
+}
+
+
+
+// .circle-shape::after {
+//     position: absolute;
+//     content: "";
+//     width: 32px;
+//     height: 32px;
+//     background-color: transparent;
+//     inset-block-end: 5px;
+//     inset-inline-start: 50px;
+//     box-shadow: 0 -16px 0px #ffffff;
+//     border-radius: 50%;
+//     transform: rotate(120deg);
+// }
+// .circle-shape::before {
+//     position: absolute;
+//     content: "";
+//     width: 32px;
+//     height: 32px;
+//     background-color: transparent;
+//     inset-block-end: 9px;
+//     inset-inline-end: 53px;
+//     box-shadow: 0 -16px 0px #ffffff;
+//     border-radius: 50%;
+//     transform: rotate(224deg);
+//     z-index: 2;
+// }

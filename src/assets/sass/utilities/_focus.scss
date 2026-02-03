@@ -1,0 +1,20 @@
+
+.focus-visible-border-main-600:focus-visible {
+    border: 1px solid #1AB69D !important;
+    outline: 1px;
+}
+.focus-visible-border-bottom-main-600:focus-visible {
+    border-bottom: 1px solid #1AB69D !important;
+    outline: 1px;
+}
+.focus-border-werning:focus {
+    border: 1px solid #FFCD1F;
+    outline: 1;
+}
+.focus-box-shadow-0:focus {
+    box-shadow: none;
+    outline: 0;
+}
+.tw-focus-shadow-none:focus {
+    box-shadow: none;
+}

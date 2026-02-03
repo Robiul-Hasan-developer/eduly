@@ -1,0 +1,107 @@
+// border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .border-#{$color}-#{$shade} {
+        border-color: var(--#{$color}-#{$shade}) !important;
+      }
+    }
+}
+
+// hover border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .hover-border-#{$color}-#{$shade} {
+        &:hover {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
+
+// focus border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .focus-border-#{$color}-#{$shade} {
+        &:focus {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
+
+  .tw-border {
+    &-dashed {
+      border-style: dashed !important;
+    }
+  }
+  
+  .border-transparent {
+    border-color: transparent !important;
+  }
+  .hover-border-bottom-3px:hover {
+    border-bottom: 3px solid #2B2B2B;
+  }
+  .tw-border-bottom-8px {
+    border-bottom: 8px solid #2B2B2B;
+  }
+  .tw-border-bottom-4px {
+    border-bottom: 4px solid #2B2B2B;
+  }
+  .tw-border-base-three-400 {
+    border: 1px solid #42514036;
+  }
+  .tw-border-base-three-600 {
+    border: 2px solid #425140;
+  }
+.tw-border-top-base-three-300 {
+  border-top: 1px solid #8787874F;
+}
+.tw-border-white {
+  border: 6px solid #FFFFFF;
+}
+.tw-border-about-us {
+  border: 1px solid #D9D9D9;
+}
+.hover-border-none:hover {
+  border: none;
+}
+.border-bottom-neutral-40 {
+  border-bottom: 1px solid #D9D9D9;
+}
+.tw-border-neutral-20 {
+  border: 1px solid #5F5D5D30;
+}
+.tw-border-neutral-40 {
+  border: 2px solid #231F20;
+}
+.tw-border-primary-150 {
+  border: 1px solid #00356626;
+}
+.tw-border-blog-details {
+  border: 1px solid #22303540;
+}
+.tw-border-gray-80 {
+  border: 1px solid #D7D7D7
+}
+.tw-border-neutral-60 {
+  border: 1px solid #30303047;
+}
+
+.tw-border-footer-top-white {
+  border-top: 1px solid #FFFFFF30
+}
+.tw-border-footer-bottom-white {
+  border-bottom: 1px solid #FFFFFF30
+}
+.tw-border-footer-left-white {
+  border-left: 1px solid #FFFFFF30;
+}
+.tw-border-footer-right-white {
+  border-right: 1px solid #FFFFFF30;
+}
+.tw-rounded-working-two {
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+.tw-border-white-17-persent {
+  border: 1px solid #FFFFFF2B;
+}

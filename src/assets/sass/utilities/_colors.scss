@@ -1,0 +1,58 @@
+
+/* Colors class start */
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .text-#{$color}-#{$shade} {
+        color: var(--#{$color}-#{$shade});
+      }
+    }
+  }
+  
+.text {
+    &--white {
+      color: hsl(var(--white));
+    }
+    &-heading {
+      color: hsl(var(--heading-color));
+    }
+    &-body {
+      color: hsl(var(--body-color));
+    }
+    &-main {
+      color: var(--main-600);
+    }
+}
+/* Colors class End */
+.tw-text-base-three {
+  color: #425140;
+}
+.text-base-three-100 {
+  color: #42514026;
+}
+.text-gradient-600 {
+  background: -webkit-linear-gradient(90deg, #3057EF 0%, #B665E7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-text-stroke{
+	color: transparent;
+	-webkit-text-stroke: 3px #28241F;
+}
+.tw-text-neutral-90 {
+  color: #011C1AC7;
+}
+.text-neutral-70 {
+  color: #28241F2E;
+}
+.tw-text-gray-90 {
+  color: #FFFFFFBD;
+}
+.text-neutral-18 {
+  color: #28241F1F;
+}
+.text-white-55-persent {
+  color: #FFFFFF8C;
+}
+
+
+

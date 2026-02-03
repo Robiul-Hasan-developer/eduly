@@ -1,0 +1,45 @@
+.nav-link {
+    color: #454E59;
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav-pills .nav-link.active {
+    background-color: #643FEB;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+.nav-faq-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 550px;
+    }
+    @media (max-width: 649px) {
+        grid-template-columns: 1fr 1fr;
+        width: 400px;
+    }
+    @media (max-width: 420px) {
+        grid-template-columns: 1fr;
+        width: 200px;
+    }
+}
+
+
+
+// ============================ online book css start ========================
+.online-book__img {
+    @media (max-width: 1199px) {
+        justify-content: center !important;
+    }
+}
+.online-book__shape {
+    @media (max-width: 1199px) {
+        margin-left: 220px;
+    }
+    @media (max-width: 992px) {
+        margin-left: 80px;
+    }
+}
+// ============================ online book css end ========================

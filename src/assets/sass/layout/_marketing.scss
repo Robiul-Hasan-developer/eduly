@@ -1,0 +1,17 @@
+.marketing-img {
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+}
+.marketing-text__img {
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
+}
+.bookmark-button {
+    transition: .3s;  
+}
+.bookmark-button.active {
+    background-color: #643FEB !important;
+    color: #fff;
+}

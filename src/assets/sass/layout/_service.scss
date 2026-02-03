@@ -1,0 +1,12 @@
+// ========================= services css start ==========================
+.services-text {
+    transition: .4s;
+    display: none;
+}
+.services-title {
+    transition: .4s;
+}
+.services-title:hover .services-text {
+    display: block;
+}
+// ========================= services css end ==========================

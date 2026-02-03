@@ -1,0 +1,159 @@
+/* Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$colors: (
+  "main": (
+    "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
+    "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
+    "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
+    "300": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.6)),
+    "400": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.5)),
+    "500": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.4)),
+    "600": hsl(var(--main-h), var(--main-s), var(--main-l)), // main theme color
+    "700": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.1)),
+    "800": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.2)),
+    "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
+  ),
+  "main-two": (
+    "50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
+    "100": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)),
+    "200": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)),
+    "300": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.6)),
+    "400": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.5)),
+    "500": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.4)),
+    "600": hsl(var(--main-two-h), var(--main-two-s), var(--main-two-l)), // main two theme color
+    "700": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1)),
+    "800": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2)),
+    "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))
+  ),
+  
+  "neutral": (
+    "05": #FFFFFFE0,
+    "10": #FFFFFF21,
+    "20": #D9D9D9,
+    "50": #EFF5FF,
+    "100": #A3A7AC,
+    "200": #616873,
+    "300": #9A9B9E,
+    "400": #686E78,
+    "500": #39404A,
+    "600": #334054,
+    "700": #55726D,
+    "900": #39404A33,
+    "950": #021E40,
+  ),
+  "denger": (
+    "100": #F5265D12,
+    "700": #053029,
+    "800": #011C1A29,
+    "900": #053029E8,
+  ),
+  "blue": (
+    "10": #F6F8FE,
+    "100": #F7EFFF,
+    "200": #687799,
+    "300": #5F5D5D,
+  ),
+  "warming": (
+    "100": #FFF7EE,
+    "200": #FFD2130A,
+    "600": #FFD213,
+  ),
+);
+
+
+// Space
+$spaces: (
+  "05": #{rem(2px)}, 
+  "1": #{rem(4px)},
+  "105": #{rem(6px)},
+  "2": #{rem(8px)},
+  "205": #{rem(10px)},
+  "3": #{rem(12px)},
+  "305": #{rem(14px)},
+  "4": #{rem(16px)},
+  "405": #{rem(18px)},
+  "5": #{rem(20px)},
+  "505": #{rem(22px)},
+  "6": #{rem(24px)},
+  "605": #{rem(26px)},
+  "7": #{rem(28px)},
+  "705": #{rem(30px)},
+  "8": #{rem(32px)},
+  "9": #{rem(36px)},
+  "10": #{rem(40px)},
+  "11": #{rem(44px)},
+  "12": #{rem(48px)},
+  "13": #{rem(52px)},
+  "14": #{rem(56px)},
+  "15": #{rem(60px)},
+  "16": #{rem(64px)},
+  "17": #{rem(68px)},
+);
+
+$font-sizes: (
+  "xs": #{rem(12px)},
+  "sm": #{rem(14px)},
+  "base": #{rem(16px)},
+  "lg": #{rem(18px)},
+  "xl": #{rem(20px)},
+  "2xl": #{rem(24px)},
+  "3xl": #{rem(30px)},
+);
+
+/* ========================= Variable Css Start ======================== */
+:root {    
+  /* Font Family Variable */
+  --heading-font: 'Outfit', serif;
+  --body-font: 'DM Sans', sans-serif;
+  /* Font Size Variable Start */
+  --heading-one: clamp(2.125rem, -0.1076rem + 4.6512vw, 4.25rem); // Min:34px - Max:68px
+  --heading-two: clamp(1.75rem, -0.3512rem + 4.3776vw, 3.75rem); // Min: 28px - Max: 60px
+  --heading-three: clamp(1.375rem, 0.0617rem + 2.736vw, 2.625rem); // Min: 24px - Max: 42px
+  --heading-four: clamp(1.375rem, 0.7068rem + 1.3921vw, 1.75rem); // Min: 22px - Max: 28px
+  --heading-five: clamp(1.125rem, 0.6795rem + 0.9281vw, 1.375rem); // Min: 18px - Max: 22px
+  --heading-six: clamp(1rem, 0.5545rem + 0.9281vw, 1.25rem); // Min: 16px - Max-20px
+  /* Font Size End */
+
+  /* template main color */
+  --main-h: 170;
+  --main-s: 73%;
+  --main-l: 40%;
+  --main: var(--main-h) var(--main-s) var(--main-l);
+
+  --main-two-h: 212;
+  --main-two-s: 36%;
+  --main-two-l: 10%;
+  --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+
+  /* White Color */
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+  --body: 0 0% 43%;
+  
+  --heading-color: var(--black);
+  --body-color: var(--body);
+
+  --translate-x-50: translateX(-50%); 
+  --translate-y-50: translateY(-50%); 
+    
+  // spacing
+  @each $property, $value in $spaces {
+    --size-#{$property}: #{$value};
+  }
+  
+  // Colors
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  // font sizes
+  @each $property, $value in $font-sizes {
+    --font-#{$property}: #{$value};
+  }  
+}
+/* ========================= Variable Css End ======================== */
+
+ 
