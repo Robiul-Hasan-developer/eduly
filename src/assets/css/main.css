@@ -116,6 +116,10 @@
     --main-two-s: 36%;
     --main-two-l: 10%;
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+    --main-three-h: 49;
+    --main-three-s: 100%;
+    --main-three-l: 54%;
+    --main-three: var(--main-three-h) var(--main-three-s) var(--main-three-l);
   /* White Color */
     --white: 0 0% 100%;
     --black: 0 0% 0%;
@@ -169,6 +173,7 @@
     --main-two-700: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1));
     --main-two-800: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2));
     --main-two-900: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3));
+    --main-three-600: hsl(var(--main-three-h), var(--main-three-s), var(--main-three-l));
     --neutral-05: #FFFFFFE0;
     --neutral-10: #FFFFFF21;
     --neutral-20: #D9D9D9;
@@ -452,6 +457,15 @@
     border-color: transparent;
 }
 
+.btn-main-three-new {
+    background-color: var(--main-three-600) !important;
+    color: hsl(var(--black)) !important;
+}
+
+.btn-main-three-new.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-main-two {
     background-color: #fff !important;
     color: #1AB69D !important;
@@ -552,6 +566,12 @@
     background-color: #1AB69D;
 }
 
+@media (max-width: 768px) {
+    .responsive-btn {
+        font-size: 14px !important;
+        padding: 10px 20px !important;
+    }
+}
 /* =========================== Button Css End =================== */
 /* ================================= Form Css Start =========================== */
 /* input File Start */
@@ -1270,6 +1290,10 @@ input:focus, input:focus-visible {
     background-color: var(--main-two-900) !important;
 }
 
+.bg-main-three-600 {
+    background-color: var(--main-three-600) !important;
+}
+
 .bg-neutral-05 {
     background-color: var(--neutral-05) !important;
 }
@@ -1444,6 +1468,10 @@ input:focus, input:focus-visible {
 
 .hover-bg-main-two-900:hover {
     background-color: var(--main-two-900) !important;
+}
+
+.hover-bg-main-three-600:hover {
+    background-color: var(--main-three-600) !important;
 }
 
 .hover-bg-neutral-05:hover {
@@ -1663,6 +1691,10 @@ input:focus, input:focus-visible {
     border-color: var(--main-two-900) !important;
 }
 
+.border-main-three-600 {
+    border-color: var(--main-three-600) !important;
+}
+
 .border-neutral-05 {
     border-color: var(--neutral-05) !important;
 }
@@ -1839,6 +1871,10 @@ input:focus, input:focus-visible {
     border-color: var(--main-two-900) !important;
 }
 
+.hover-border-main-three-600:hover {
+    border-color: var(--main-three-600) !important;
+}
+
 .hover-border-neutral-05:hover {
     border-color: var(--neutral-05) !important;
 }
@@ -2013,6 +2049,10 @@ input:focus, input:focus-visible {
 
 .focus-border-main-two-900:focus {
     border-color: var(--main-two-900) !important;
+}
+
+.focus-border-main-three-600:focus {
+    border-color: var(--main-three-600) !important;
 }
 
 .focus-border-neutral-05:focus {
@@ -2288,6 +2328,10 @@ input:focus, input:focus-visible {
     color: var(--main-two-900);
 }
 
+.text-main-three-600 {
+    color: var(--main-three-600);
+}
+
 .text-neutral-05 {
     color: var(--neutral-05);
 }
@@ -2519,6 +2563,10 @@ input:focus, input:focus-visible {
 
 .hover-text-main-two-900:hover {
     color: var(--main-two-900) !important;
+}
+
+.hover-text-main-three-600:hover {
+    color: var(--main-three-600) !important;
 }
 
 .hover-text-neutral-05:hover {
@@ -5183,6 +5231,10 @@ input:focus, input:focus-visible {
     max-width: 1320px;
 }
 
+.max-w-1360-px {
+    max-width: 1360px;
+}
+
 .max-w-1400-px {
     max-width: 1400px;
 }
@@ -6006,6 +6058,16 @@ input:focus, input:focus-visible {
 
 .tw-p-60-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+}
+
+.tw-pe-150-px-res {
+    padding-inline-end: 80px;
+}
+
+@media (min-width: 992px) {
+    .tw-pe-150-px-res {
+        padding-inline-end: 150px;
+    }
 }
 
 .py-120 {
@@ -6968,6 +7030,10 @@ input:focus, input:focus-visible {
 
 .tw-apply-here-three-shadow {
     box-shadow: 0px 0px 50px 42px #0E05480A;
+}
+
+.new-shadow {
+    box-shadow: 6px 4px 146.6px 15px #16064721;
 }
 
 /* Box shadow End */

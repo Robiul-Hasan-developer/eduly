@@ -88,6 +88,16 @@
         }
     
     }
+    &-main-three-new {
+        background-color: var(--main-three-600) !important;
+        color: hsl(var(--black)) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    
+    }
     &-main-two {
         background-color: #fff !important;
         color: #1AB69D !important;
@@ -211,6 +221,14 @@
                 background-color: #1AB69D;
             }
         }
+    }
+}
+
+
+.responsive-btn {
+    @media (max-width: 768px) {
+        font-size: 14px !important;
+        padding: 10px 20px !important;
     }
 }
 /* =========================== Button Css End =================== */
