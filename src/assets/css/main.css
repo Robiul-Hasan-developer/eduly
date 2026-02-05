@@ -3336,6 +3336,11 @@ input:focus, input:focus-visible {
     visibility: visible;
 }
 
+.group-item:hover .group-hover-item-invisible {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .group-item:hover .group-hover-item-opacity-1 {
     opacity: 1 !important;
 }
@@ -9539,15 +9544,6 @@ input:focus, input:focus-visible {
     content: "\e220";
 }
 
-.teacher__link {
-    display: none;
-    transition: 0.5s;
-}
-
-.teacher-card:hover .teacher__link {
-    display: block;
-}
-
 .custom-accord-content {
     display: none;
 }
@@ -9569,6 +9565,10 @@ input:focus, input:focus-visible {
     text-decoration: underline;
 }
 
+.share-btn {
+    transform: translateY(-24px) translateX(-50%) !important;
+}
+
 /* Feature item start */
 @media (min-width: 1200px) {
     .feature-item {
@@ -9581,9 +9581,14 @@ input:focus, input:focus-visible {
 }
 
 .text-stroke {
-    color: green;
-    -webkit-text-fill-color: #F00;
-    -webkit-text-stroke: 3px #111;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #39404A;
+    transition: 0.4s;
+}
+
+.text-stroke:hover {
+    -webkit-text-fill-color: #39404A;
 }
 
 /* Feature item end */

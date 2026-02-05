@@ -52,6 +52,10 @@
     .group-hover-item-visible {
       visibility: visible;
     }
+    .group-hover-item-invisible {
+      visibility: hidden;
+      opacity: 0;
+    }
     .group-hover-item-opacity-1 {
       opacity: 1 !important;
     }
