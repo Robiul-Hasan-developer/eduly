@@ -1647,6 +1647,22 @@ input:focus, input:focus-visible {
     background-color: #110C2D;
 }
 
+.bg-purple-light {
+    background-color: #F7EFFF;
+}
+
+.bg-warning-light {
+    background-color: #FFF7EE;
+}
+
+.bg-cyan-light {
+    background-color: #EFFAFD;
+}
+
+.bg-red-light {
+    background-color: #FEF0F4;
+}
+
 .border-main-50 {
     border-color: var(--main-50) !important;
 }
@@ -9553,6 +9569,24 @@ input:focus, input:focus-visible {
     text-decoration: underline;
 }
 
+/* Feature item start */
+@media (min-width: 1200px) {
+    .feature-item {
+        -webkit-mask-image: url("../images/shape/polygon-shape.png");
+        mask-image: url("../images/shape/polygon-shape.png");
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        mask-position: center;
+    }
+}
+
+.text-stroke {
+    color: green;
+    -webkit-text-fill-color: #F00;
+    -webkit-text-stroke: 3px #111;
+}
+
+/* Feature item end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
