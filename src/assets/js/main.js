@@ -99,9 +99,6 @@
     }
     // ========================== add active class to navbar menu current page Js End =====================
 
-
-
-
     // ================================ Floating Progress js start =================================
     const progressContainers = document.querySelectorAll(".progress-container");
 
@@ -137,7 +134,7 @@
       },
       {
         threshold: 0.5, // Adjust this value as needed (0.5 means half the section needs to be visible)
-      }
+      },
     );
 
     // Start observing all progress containers
@@ -145,11 +142,6 @@
       observer.observe(progressContainer);
     });
     // ================================ Floating Progress js End =================================
-
-
-
-
-
 
     // ==================== teacher js start =======================
     var studentSwiperSlider = new Swiper(".student-swiper-slider", {
@@ -177,7 +169,6 @@
     });
     // ==================== teacher js end =======================
 
-
     // ============================ student js start =======================
     var studentTwoSlider = new Swiper(".student-two-slider", {
       spaceBetween: 30,
@@ -202,7 +193,6 @@
     });
     // ============================ student js end =======================
 
-
     // ======================= student review js start =======================
     var studentReviewThreeSlider = new Swiper(".student-review-three-slider", {
       spaceBetween: 30,
@@ -223,7 +213,6 @@
       },
     });
     // ======================= student review js end =======================
-
 
     // ============================ blog js start =======================
     var blogTwoSlider = new Swiper(".blog-two-slider", {
@@ -249,9 +238,8 @@
     });
     // ============================ blog js end =======================
 
-
     // ======================== brand js start =========================
-       var brandSlider = new Swiper(".brand-slider", {
+    var brandSlider = new Swiper(".brand-slider", {
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -283,11 +271,8 @@
 
     // ======================== brand js end =========================
 
-
-
-
     // ======================== brand js start =========================
-       var brandSlider = new Swiper(".footer-three-slider", {
+    var brandSlider = new Swiper(".footer-three-slider", {
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -328,8 +313,6 @@
 
     // ======================== brand js end =========================
 
-
-
     // ===================== marketing js start ======================
     var marketingSlider = new Swiper(".marketing-slider", {
       slidesPerView: 1,
@@ -353,10 +336,8 @@
     // })
     // ===================== marketing js end ======================
 
-
-
     // =================== testimonial js start =====================
-      var testimonialSlider = new Swiper(".testimonial-slider", {
+    var testimonialSlider = new Swiper(".testimonial-slider", {
       slidesPerView: 1,
       loop: true,
       speed: 1500,
@@ -370,9 +351,8 @@
         prevEl: ".button-prev",
       },
     });
-    // =================== testimonial js end ===================== 
+    // =================== testimonial js end =====================
 
- 
     // =================== brand slider four js start ===================
     var brandSliderFour = new Swiper(".brand-slider__four", {
       autoplay: {
@@ -405,7 +385,6 @@
     });
     // =================== brand slider four js end ===================
 
-
     // =================== design slider four js start ========================
     var designCoursesSlider = new Swiper(".design-courses-slider", {
       slidesPerView: 3,
@@ -414,7 +393,7 @@
       speed: 1500,
       grabCursor: true,
       spaceBetween: 20,
-     autoplay: {
+      autoplay: {
         delay: 2000,
         disableOnInteraction: false,
       },
@@ -439,17 +418,15 @@
     });
     // =================== design slider four js end ========================
 
-
-
     // ==================== student slider four js start ======================
-      var studentFourSlider = new Swiper(".student-four-slider", {
+    var studentFourSlider = new Swiper(".student-four-slider", {
       slidesPerView: 2,
       loop: true,
       autoplay: true,
       speed: 1500,
       grabCursor: true,
       spaceBetween: 30,
-     autoplay: {
+      autoplay: {
         delay: 2000,
         disableOnInteraction: false,
       },
@@ -471,36 +448,36 @@
     });
     // ==================== student slider four js end ======================
 
-
     // ========================= exam preparation five js start ========================
-    var examPreparationFiveSlider = new Swiper(".exam-preparation-five-slider", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: true,
-      speed:1500,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+    var examPreparationFiveSlider = new Swiper(
+      ".exam-preparation-five-slider",
+      {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        speed: 1500,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+          },
+          524: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1199: {
+            slidesPerView: 3,
+          },
+        },
       },
-      breakpoints: {
-        300: {
-          slidesPerView: 1,
-        },
-        524: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1199: {
-          slidesPerView: 3,
-        },
-      },
-    });
+    );
     // ========================= exam preparation five js end ========================
-
-
 
     // ======================== course catagory five js start ===========================
     var catagoryFiveSlider = new Swiper(".catagory-five-slider", {
@@ -543,7 +520,6 @@
     });
     // ======================== course catagory five js end ===========================
 
-
     // ====================== contact width js start ===============================
     var contactWidthSlider = new Swiper(".contact-width-slider", {
       slidesPerView: 1,
@@ -561,8 +537,6 @@
     });
     // ====================== contact width js end ===============================
 
-
-
     // ========================= testimonial five js start ==========================
     var testimonialFiveSlider = new Swiper(".testimonial-five-slider", {
       slidesPerView: 4,
@@ -571,7 +545,7 @@
       autoplay: true,
       speed: 1500,
       autoplay: {
-        delay: .1,
+        delay: 0.1,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -592,7 +566,7 @@
         },
       },
     });
-  
+
     var testimonialFiveSliderTwo = new Swiper(".testimonial-five-slider-two", {
       slidesPerView: 4,
       spaceBetween: 20,
@@ -600,7 +574,7 @@
       autoplay: true,
       speed: 1500,
       autoplay: {
-        delay: .1,
+        delay: 0.1,
         disableOnInteraction: false,
       },
       breakpoints: {
@@ -623,17 +597,15 @@
     });
     // ========================= testimonial five js end ==========================
 
-
-
     // =================== footer js start ======================
-      var footerBottomSlider = new Swiper(".footer-bottom__slider", {
-        slidesPerView: 10,
-        loop: true,
-          autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
+    var footerBottomSlider = new Swiper(".footer-bottom__slider", {
+      slidesPerView: 10,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
         300: {
           slidesPerView: 1,
         },
@@ -665,10 +637,8 @@
           slidesPerView: 10,
         },
       },
-      });
+    });
     // =================== footer js end ======================
-
-
 
     // =================== slider three js start ===================
     var swiperSliderThree = new Swiper(".swiper-slider__three", {
@@ -685,9 +655,7 @@
     });
     // =================== slider three js end ===================
 
-
-
-  // ========================= magnific Popup Js Start =====================
+    // ========================= magnific Popup Js Start =====================
     $(".play-button").magnificPopup({
       type: "iframe",
       removalDelay: 300,
@@ -700,8 +668,7 @@
     });
     // ========================= magnific Popup Js End =====================
 
-
-   // ====================== Marquee Js Start ========================
+    // ====================== Marquee Js Start ========================
     if ($(".marquee_left").length) {
       $(".marquee_left").marquee({
         speed: 50,
@@ -716,26 +683,20 @@
     }
     // ====================== Marquee Js End ========================
 
-
-
-          // =========================  Search Bar 9 Js Start ==============
-      $(".open-search").on("click", function () {
-        $(".search_popup").addClass("search-opened");
-        $(".search-popup-overlay").addClass("search-popup-overlay-open");
-      });
-      $(".search_close_btn").on("click", function () {
-        $(".search_popup").removeClass("search-opened");
-        $(".search-popup-overlay").removeClass("search-popup-overlay-open");
-      });
-      $(".search-popup-overlay").on("click", function () {
-        $(".search_popup").removeClass("search-opened");
-        $(this).removeClass("search-popup-overlay-open");
-      });
-      // =========================  Search Bar 9 Js End ==============
-
-
-
-
+    // =========================  Search Bar 9 Js Start ==============
+    $(".open-search").on("click", function () {
+      $(".search_popup").addClass("search-opened");
+      $(".search-popup-overlay").addClass("search-popup-overlay-open");
+    });
+    $(".search_close_btn").on("click", function () {
+      $(".search_popup").removeClass("search-opened");
+      $(".search-popup-overlay").removeClass("search-popup-overlay-open");
+    });
+    $(".search-popup-overlay").on("click", function () {
+      $(".search_popup").removeClass("search-opened");
+      $(this).removeClass("search-popup-overlay-open");
+    });
+    // =========================  Search Bar 9 Js End ==============
 
     // ======================== instructor js start ========================
     $(".show-social-icon-button").on("click", function () {
@@ -744,24 +705,20 @@
     });
     // ======================== instructor js end ========================
 
-
     // ======================== course filter js start ============================
     $(".course-nave-menu").on("click", function () {
-      $(this).siblings('.course-nave-menu__item').slideToggle("active");
-    })
+      $(this).siblings(".course-nave-menu__item").slideToggle("active");
+    });
     // ======================== course filter js end ============================
 
     // ======================== course filter js start ============================
     $(".course-toggle__button").on("click", function () {
       $(".course-toggle-item").toggleClass("active");
-    })
+    });
     $(".course-crose-button").on("click", function () {
       $(".course-toggle-item").removeClass("active");
-    })
+    });
     // ======================== course filter js end ============================
-
-
-
 
     // ========================== Settings Panel Js Start =====================
     $(".settings-button").on("click", function () {
@@ -775,7 +732,7 @@
       function () {
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
-      }
+      },
     );
 
     // Cursor start
@@ -872,7 +829,7 @@
         "danger",
         "Deleted",
         "You deleted successfully!",
-        "ph-bold ph-trash"
+        "ph-bold ph-trash",
       );
     });
     // ========================= Delete Item Js End ===================
@@ -889,13 +846,13 @@
         "success",
         "Success",
         "Form submitted successfully!",
-        "ph-fill ph-check-circle"
+        "ph-fill ph-check-circle",
       );
     });
     // ========================= Form Submit Js End ===================
 
     // ================== Password Show Hide Js Start ==========
-     $(".toggle-password").on("click", function () {
+    $(".toggle-password").on("click", function () {
       $(this).toggleClass("active");
       var input = $($(this).attr("id"));
       if (input.attr("type") == "password") {
@@ -915,41 +872,38 @@
     });
     // ========================= AOS Js End ===========================
 
-
-
     // ======================== counter up js start ======================
-      const counterUp = window.counterUp.default;
-      const callback = (entries) => {
-        entries.forEach((entry) => {
-          const el = entry.target;
-          if (entry.isIntersecting && !el.classList.contains("is-visible")) {
-            counterUp(el, {
-              duration: 3500,
-              delay: 16,
-            });
-            el.classList.add("is-visible");
-          }
-        });
-      };
-      const IO = new IntersectionObserver(callback, { threshold: 1 });
+    const counterUp = window.counterUp.default;
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+          counterUp(el, {
+            duration: 3500,
+            delay: 16,
+          });
+          el.classList.add("is-visible");
+        }
+      });
+    };
+    const IO = new IntersectionObserver(callback, { threshold: 1 });
 
-      // Banner statistics Counter
-      const statisticsCounter = document.querySelectorAll(".counter");
-      if (statisticsCounter.length > 0) {
-        statisticsCounter.forEach((counterNumber) => {
-          IO.observe(counterNumber);
-        });
-      }
+    // Banner statistics Counter
+    const statisticsCounter = document.querySelectorAll(".counter");
+    if (statisticsCounter.length > 0) {
+      statisticsCounter.forEach((counterNumber) => {
+        IO.observe(counterNumber);
+      });
+    }
 
-      // performance Count
-      const performanceCount = document.querySelectorAll(".counter");
-      if (performanceCount.length > 0) {
-        performanceCount.forEach((counterNumber) => {
-          IO.observe(counterNumber);
-        });
-      }
+    // performance Count
+    const performanceCount = document.querySelectorAll(".counter");
+    if (performanceCount.length > 0) {
+      performanceCount.forEach((counterNumber) => {
+        IO.observe(counterNumber);
+      });
+    }
     // ======================== counter up js end ======================
-    
 
     // ========================= Category Js Start ===================
     let categoryButton = document.querySelector(".category-button");
@@ -974,7 +928,25 @@
       });
     }
     // ========================= Category Js End ===================
-    
+
+    // ========================= Custom Accordion End ===================
+      const $firstAccord = $(".custom-accord").first();
+      $firstAccord.find(".custom-accord-btn").addClass("active");
+      $firstAccord.find(".custom-accord-content").show();
+
+      $(document).on("click", ".custom-accord-btn", function () {
+        const $currentAccord = $(this).closest(".custom-accord");
+        const $currentContent = $currentAccord.find(".custom-accord-content");
+
+        // Close others
+        $(".custom-accord-content").not($currentContent).slideUp(200);
+        $(".custom-accord-btn").not(this).removeClass("active");
+
+        // Toggle current
+        $(this).toggleClass("active");
+        $currentContent.stop(true, true).slideToggle(200);
+      });
+    // ========================= Custom Accordion End ===================
 
   });
   // ==========================================
@@ -995,7 +967,6 @@
       $(".header").removeClass("fixed-header");
     }
   });
-
 
   $(window).on("scroll", function () {
     if ($(window).scrollTop() >= 260) {

@@ -1,12 +1,23 @@
 // ========================= services css start ==========================
-.services-text {
-    transition: .4s;
+.custom-accord-content {
     display: none;
 }
-.services-title {
-    transition: .4s;
+
+.accord-icon {
+    transform: scale(.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
 }
-.services-title:hover .services-text {
-    display: block;
+
+.custom-accord-btn.active .accord-icon {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
 }
+
+.custom-accord-btn.active .text {
+    text-decoration: underline;
+}
+
 // ========================= services css end ==========================
