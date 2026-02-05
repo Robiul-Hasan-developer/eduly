@@ -9569,6 +9569,37 @@ input:focus, input:focus-visible {
     transform: translateY(-24px) translateX(-50%) !important;
 }
 
+.radial-progress {
+    height: auto;
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+.radial-progress circle {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.radial-progress circle.incomplete {
+    stroke: var(--main-600);
+    stroke-width: 1px;
+}
+
+.radial-progress circle.complete {
+    stroke-dasharray: 219.9114857513;
+    stroke-dashoffset: 219.9114857513;
+    stroke: var(--main-600);
+    transition: stroke-dashoffset 1.25s ease-out;
+}
+
+.radial-progress text {
+    fill: #fff;
+    text-anchor: middle;
+    transform: rotate(0deg);
+}
+
 /* Feature item start */
 @media (min-width: 1200px) {
     .feature-item {
