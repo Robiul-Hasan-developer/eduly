@@ -145,21 +145,15 @@
 
     // ==================== teacher js start =======================
     var studentSwiperSlider = new Swiper(".student-swiper-slider", {
-      autoplay: true,
+      autoplay: false,
       speed: 1500,
       grabCursor: true,
       spaceBetween: 30,
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 1,
       breakpoints: {
         300: {
           slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1200: {
-          slidesPerView: 3,
         },
       },
       pagination: {

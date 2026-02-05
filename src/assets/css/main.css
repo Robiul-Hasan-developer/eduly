@@ -1067,6 +1067,34 @@ input[type=number] {
     background-color: #1CB098;
 }
 
+/* Swiper slider css start */
+.swiper-pagination-bullet {
+    border: 1px solid var(--main-600);
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    position: relative;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: var(--main-600);
+    top: 50%;
+    inset-inline-start: 50%;
+    border-radius: inherit;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s linear;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Swiper slider css end */
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;
@@ -1661,6 +1689,10 @@ input:focus, input:focus-visible {
 
 .bg-red-light {
     background-color: #FEF0F4;
+}
+
+.section-bg-gradient {
+    background: linear-gradient(102.21deg, #EBFFFC 8.72%, #F2FFF4 100%);
 }
 
 .border-main-50 {

@@ -1,0 +1,27 @@
+/* Swiper slider css start */
+.swiper-pagination-bullet {
+    border: 1px solid var(--main-600);
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    position: relative;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: var(--main-600);
+    top: 50%;
+    inset-inline-start: 50%;
+    border-radius: inherit;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s linear;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+/* Swiper slider css end */
