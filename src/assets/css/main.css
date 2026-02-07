@@ -5152,6 +5152,10 @@ input:focus, input:focus-visible {
 
 /* Max Height Css Class End */
 /* Max width Css Class Start */
+.max-w-110-px {
+    max-width: 110px;
+}
+
 .max-w-186-px {
     max-width: 186px;
 }
@@ -6953,6 +6957,13 @@ input:focus, input:focus-visible {
     border-start-start-radius: 12px;
 }
 
+.tw-rounded-cap {
+    border-top-left-radius: 109px;
+    border-top-right-radius: 109px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
 /* Rotate Css Start */
 .tw-hover-rotate-360:hover {
     transform: rotate(260deg);
@@ -7147,6 +7158,10 @@ input:focus, input:focus-visible {
 
 .new-shadow-two {
     box-shadow: 6px 4px 146.6px 15px #1606471A;
+}
+
+.new-shadow-three {
+    box-shadow: 6px 14px 125.3px 0px #13085117;
 }
 
 /* Box shadow End */
