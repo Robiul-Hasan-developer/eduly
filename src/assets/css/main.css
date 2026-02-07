@@ -7141,6 +7141,10 @@ input:focus, input:focus-visible {
     box-shadow: 6px 4px 146.6px 15px #16064721;
 }
 
+.new-shadow-two {
+    box-shadow: 6px 4px 146.6px 15px #1606471A;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
