@@ -186,6 +186,38 @@
       },
     });
     // ============================ student js end =======================
+    // ============================ student js start =======================
+    var popularCategorySlider = new Swiper(".popular-category-slider", {
+      spaceBetween: 12,
+      loop: true,
+      speed: 1500,
+      slidesPerView: 1,
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+        400: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+      pagination: {
+        el: ".popular-category-pagination",
+        clickable: true,
+      },
+    });
+    // ============================ student js end =======================
 
     // ======================= student review js start =======================
     var studentReviewThreeSlider = new Swiper(".student-review-three-slider", {
