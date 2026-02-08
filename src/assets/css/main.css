@@ -363,6 +363,10 @@
     background-image: none;
 }
 
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1) brightness(2);
+}
+
 /* ========================== Button Css Start =============== */
 .button__label {
     position: relative;

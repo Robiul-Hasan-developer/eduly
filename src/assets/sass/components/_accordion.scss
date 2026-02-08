@@ -146,4 +146,8 @@
     font-family: "phosphor";
     background-image: none;
 }
+
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1) brightness(2);
+}
 // ========================= accordion three css end =============================
