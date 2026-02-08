@@ -1630,6 +1630,10 @@ input:focus, input:focus-visible {
     background-color: #FFFFFF38;
 }
 
+.bg-white-40 {
+    background: #FFFFFF63;
+}
+
 .bg-black-22 {
     background: #111A2438;
 }
@@ -3298,6 +3302,10 @@ input:focus, input:focus-visible {
 
 .tw-gap-26-px {
     gap: clamp(1rem, 0.0938rem + 4.5vw, 1.625rem);
+}
+
+.tw-gap-30-px {
+    gap: clamp(1.5rem, 0.0938rem + 4.5vw, 1.875rem);
 }
 
 .tw-gap-42-px {
