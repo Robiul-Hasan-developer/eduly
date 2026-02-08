@@ -5172,6 +5172,10 @@ input:focus, input:focus-visible {
     max-width: 110px;
 }
 
+.max-w-130-px {
+    max-width: 130px;
+}
+
 .max-w-186-px {
     max-width: 186px;
 }
