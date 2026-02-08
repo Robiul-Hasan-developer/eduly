@@ -13,52 +13,19 @@
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #ffffffe6;
+    background: #fff;
     @include md-screen {
       inset-block-start: -1px;
     }
   }
 }
-.header-two {
-  @include md-screen {
-    padding: 10px 0;
-  }
-  &.fixed-header {
-    position: sticky;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    width: 100%;
-    z-index: 9;
-    backdrop-filter: blur(24px);
-    animation: slideDown 0.35s ease-out;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff !important;
-    @include md-screen {
-      inset-block-start: -1px;
-    }
-  }
-}
+
 .header-three {
-  @include md-screen {
-    padding: 10px 0;
-  }
   &.fixed-header {
-    position: sticky;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    width: 100%;
-    z-index: 9;
-    backdrop-filter: blur(24px);
-    animation: slideDown 0.35s ease-out;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #512923 !important;
-    @include md-screen {
-      inset-block-start: -1px;
-    }
+    background-color: var(--neutral-950);
   }
 }
+
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -270,5 +237,14 @@
 }
 
 /* Category Dropdown Css End */
+
+
+.header-three {
+    position: absolute;
+    width: 100%;
+    inset-inline-start: 0;
+    top: 41px;
+    inset-inline-end: 0;
+}
 
 /* ================================= Header Css End =========================== */

@@ -1630,12 +1630,12 @@ input:focus, input:focus-visible {
     background-color: #FFFFFF38;
 }
 
-.bg-white-40 {
-    background: #FFFFFF63;
-}
-
 .bg-black-22 {
     background: #111A2438;
+}
+
+.bg-black-40 {
+    background-color: #171717bd;
 }
 
 .bg-black-12 {
@@ -8127,7 +8127,7 @@ input:focus, input:focus-visible {
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #ffffffe6;
+    background: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -8136,54 +8136,8 @@ input:focus, input:focus-visible {
     }
 }
 
-@media screen and (max-width: 991px) {
-    .header-two {
-        padding: 10px 0;
-    }
-}
-
-.header-two.fixed-header {
-    position: sticky;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    width: 100%;
-    z-index: 9;
-    backdrop-filter: blur(24px);
-    animation: slideDown 0.35s ease-out;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff !important;
-}
-
-@media screen and (max-width: 991px) {
-    .header-two.fixed-header {
-        inset-block-start: -1px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .header-three {
-        padding: 10px 0;
-    }
-}
-
 .header-three.fixed-header {
-    position: sticky;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    width: 100%;
-    z-index: 9;
-    backdrop-filter: blur(24px);
-    animation: slideDown 0.35s ease-out;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #512923 !important;
-}
-
-@media screen and (max-width: 991px) {
-    .header-three.fixed-header {
-        inset-block-start: -1px;
-    }
+    background-color: var(--neutral-950);
 }
 
 @keyframes slideDown {
@@ -8382,6 +8336,14 @@ input:focus, input:focus-visible {
 }
 
 /* Category Dropdown Css End */
+.header-three {
+    position: absolute;
+    width: 100%;
+    inset-inline-start: 0;
+    top: 41px;
+    inset-inline-end: 0;
+}
+
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {
