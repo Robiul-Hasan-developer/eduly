@@ -23,6 +23,7 @@
     background-color: hsl(var(--white)) !important;
   }
 }
+
 .hover-bg-black {
   &:hover {
     background-color: hsl(var(--black)) !important;
@@ -33,18 +34,23 @@
   &-08 {
     background-color: hsl(var(--white) / 0.08);
   }
+
   &-13 {
     background-color: hsl(var(--white) / 0.13);
   }
+
   &-7 {
     background-color: hsl(var(--white) / 0.7);
   }
+
   &-06 {
     background-color: hsl(var(--white) / 0.06);
   }
+
   &-22 {
     background-color: #FFFFFF38;
   }
+
   &-40 {
     background: #FFFFFF63;
   }
@@ -53,6 +59,7 @@
 .bg-black-22 {
   background: #111A2438;
 }
+
 .bg-black-12 {
   background: #00000012;
 }
@@ -61,12 +68,15 @@
 .bg-main-10 {
   background-color: #E8F8F5;
 }
+
 .bg-neutral-12-persent {
   background-color: #0208421F;
 }
+
 .bg-white-32-persent {
   background-color: #FFFFFF52;
 }
+
 .bg-white-44-persent {
   background-color: #FFFFFF70;
 }
@@ -78,6 +88,7 @@
 .text-purple-600 {
   color: #6D13D7;
 }
+
 .bg-purple-600 {
   background-color: #6D13D7;
 }
@@ -121,4 +132,8 @@
 
 .bg-pink-600 {
   background-color: #F5265D;
+}
+
+.filter-blur-54-px {
+  backdrop-filter: blur(54px);
 }

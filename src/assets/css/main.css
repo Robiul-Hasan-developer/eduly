@@ -1711,6 +1711,10 @@ input:focus, input:focus-visible {
     background-color: #F5265D;
 }
 
+.filter-blur-54-px {
+    backdrop-filter: blur(54px);
+}
+
 .border-main-50 {
     border-color: var(--main-50) !important;
 }
