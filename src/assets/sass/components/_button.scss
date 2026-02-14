@@ -128,6 +128,16 @@
         }
     
     }
+    &-main-five {
+        background-color: #FFD213 !important;
+        color: #000 !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    
+    }
 }
 
 .hover-style {

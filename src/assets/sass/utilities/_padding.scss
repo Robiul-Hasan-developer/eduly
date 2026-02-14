@@ -287,6 +287,10 @@
   }
 }
 /* ================================= Padding Css End =========================== */
+.tw-pt-240-px {
+  padding-top: clamp(7.5rem, 16.3709rem + -1.1551vw, 15rem);
+}
+
 .tw-ps-178-px {
   padding-left: 178px;
 }
