@@ -247,4 +247,7 @@
     inset-inline-end: 0;
 }
 
+.main-text-white .nav-menu__link, .main-text-white .has-submenu > a::before {
+  color: #fff;
+}
 /* ================================= Header Css End =========================== */
