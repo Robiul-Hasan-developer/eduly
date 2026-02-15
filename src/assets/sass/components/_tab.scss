@@ -3,9 +3,10 @@
     .nav-item {
         .nav-link {
             &.active {
-                color: hsl(var(--white)) !important; 
+                color: hsl(var(--white)) !important;
                 border-color: hsl(var(--main)) !important;
             }
+
             &:hover {
                 color: var(--main-600);
             }
@@ -29,18 +30,31 @@
     display: none;
     transition: .5s;
 }
+
 .online-course__item {
     transition: .5s;
 }
+
 .online-course-card {
     transition: .5s;
 }
+
 .online-course__item:hover {
     .online-course-card {
         display: none;
     }
+
     .online-course__link {
         display: block;
     }
 }
+
+
+.active-main-text-white {
+    .nav-link.active {
+        background-color: var(--main-600) !important;
+        color: #fff !important;
+    }
+}
+
 /* ================================= Tab Css End =========================== */

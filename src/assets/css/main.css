@@ -821,6 +821,11 @@ input[type=number] {
     display: block;
 }
 
+.active-main-text-white .nav-link.active {
+    background-color: var(--main-600) !important;
+    color: #fff !important;
+}
+
 /* ================================= Tab Css End =========================== */
 /* ======================= Common Table Css Start ======================= */
 .table > :not(caption) > * > * {
